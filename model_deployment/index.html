@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Review Sentiment Analysis</h1>
+        <form action="/predict" method="post">
+            <textarea name="review" placeholder="Enter your movie review here..." required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+        {% if review %}
+            <div class="result">
+                <h2>Your Review:</h2>
+                <p>{{ review }}</p>
+                <h3>Sentiment: {{ sentiment }}</h3>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
