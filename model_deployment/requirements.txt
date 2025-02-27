@@ -1,0 +1,5 @@
+Flask
+joblib
+numpy
+scikit-learn
+pandas

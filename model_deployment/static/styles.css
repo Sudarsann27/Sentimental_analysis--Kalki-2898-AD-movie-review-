@@ -20,8 +20,8 @@ h1 {
 }
 
 textarea {
-    width: 100%;
-    height: 150px;
+    width: 50%;
+    height: 100px;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
@@ -30,7 +30,7 @@ textarea {
 }
 
 button {
-    width: 100%;
+    width: 10%;
     padding: 10px;
     background-color: #5cb85c;
     color: white;
@@ -46,7 +46,7 @@ button:hover {
 
 .result {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .result h2, .result h3 {
